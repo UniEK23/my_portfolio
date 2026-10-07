@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ekan Anaikot — Web Developer, 3D Artist & Game Developer</title>
+    <meta
+      name="description"
+      content="Ekan Anaikot builds responsive web apps, 3D assets and game prototypes. Based in Uyo, Nigeria. Open to freelance work, internships and collaborations."
+    />
+    <meta property="og:title" content="Ekan Anaikot — Web, 3D & Games" />
+    <meta
+      property="og:description"
+      content="Web developer, 3D artist and game developer. Let's build something."
+    />
+    <meta name="theme-color" content="#0b0c0f" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ekan_portfolio.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="wrap">
+        <a href="#top" class="logo">Ekan<span>.</span></a>
+        <nav>
+          <a href="#services">Services</a><a href="#skills">Skills</a
+          ><a href="#work">Work</a><a href="#education">Credentials</a
+          ><a href="#about">About</a
+          ><a href="#contact" class="btn pri">Hire me</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="wrap">
+          <div>
+            <span class="mono status"
+              ><i></i> Open to freelance &amp; internships</span
+            >
+            <h1>
+              I build things that <em>run</em>, <em>render</em> and
+              <em>play</em>.
+            </h1>
+            <p>
+              Ekan Anaikot — web developer, 3D artist and game developer. I turn
+              ideas into fast websites, polished 3D assets and playable
+              prototypes, with an engineer's attention to detail.
+            </p>
+            <div class="cta">
+              <a href="#work" class="btn pri">See my work →</a
+              ><a href="#contact" class="btn">Let's talk</a>
+            </div>
+          </div>
+          <canvas
+            id="cube"
+            aria-label="Rotating 3D wireframe"
+            role="img"
+          ></canvas>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="wrap">
+          <span class="mono rv"><b>01</b> / Services</span>
+          <h2 class="rv">Four ways I can <em>help</em></h2>
+          <div class="grid">
+            <article class="card rv">
+              <span class="mono"><b>&lt;/&gt;</b> Web</span>
+              <h3>Websites &amp; web apps</h3>
+              <p>
+                Responsive, fast, accessible sites and backends for businesses,
+                creators and startups.
+              </p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span
+                ><span>Node.js</span><span>Express</span>
+              </div>
+            </article>
+            <article class="card rv">
+              <span class="mono"><b>◆</b> 3D</span>
+              <h3>3D art &amp; visualization</h3>
+              <p>
+                Low-poly assets, product renders and environments, optimized for
+                games and the web.
+              </p>
+              <div class="tags">
+                <span>Blender</span><span>Low-poly</span
+                ><span>Product viz</span>
+              </div>
+            </article>
+            <article class="card rv">
+              <span class="mono"><b>▶</b> Games</span>
+              <h3>Game prototypes</h3>
+              <p>
+                Gameplay systems and interactive experiences, built to test
+                ideas quickly.
+              </p>
+              <div class="tags">
+                <span>Gameplay systems</span><span>Prototyping</span>
+              </div>
+            </article>
+            <article class="card rv">
+              <span class="mono"><b>∑</b> Engineering</span>
+              <h3>Technical problem-solving</h3>
+              <p>
+                Physics and mechanical engineering training for math-heavy
+                logic, simulation and CAD-aware work.
+              </p>
+              <div class="tags">
+                <span>Physics</span><span>SolidWorks</span><span>Python</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="wrap">
+          <span class="mono rv"><b>02</b> / Skills</span>
+          <h2 class="rv">My skill <em>tree</em></h2>
+          <p class="mut rv" style="margin: -20px 0 14px; max-width: 60ch">
+            Tap a node. Solid orange is unlocked, pulsing is in training, dim is
+            on the roadmap.
+          </p>
+          <p class="mono rv" id="xp" style="margin-bottom: 24px"></p>
+          <div class="tree" id="tree"></div>
+          <div class="quest rv" id="quest" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="work">
+        <div class="wrap">
+          <span class="mono rv"><b>03</b> / Selected work</span>
+          <h2 class="rv">Projects with <em>proof</em></h2>
+          <div class="grid work">
+            <!-- TODO: replace each block with a real project: screenshot in .thumb, real text, real links -->
+            <article class="card rv">
+              <div class="thumb">[ SCREENSHOT · 1600×1000 ]</div>
+              <span class="mono"><b>01</b> · Web app</span>
+              <h3>My best web project</h3>
+              <p>
+                One line on the problem, one on what you built, one on the
+                result.
+              </p>
+              <div class="tags">
+                <span>JavaScript</span><span>Node.js</span>
+              </div>
+              <div class="links">
+                <a href="#">Live demo ↗</a><a href="#">Code ↗</a>
+              </div>
+            </article>
+            <article class="card rv">
+              <div class="thumb">[ BLENDER RENDER ]</div>
+              <span class="mono"><b>02</b> · 3D</span>
+              <h3>My best 3D piece</h3>
+              <p>
+                Tell the story: what it is, tools used, polygon count or render
+                time.
+              </p>
+              <div class="tags"><span>Blender</span><span>Low-poly</span></div>
+              <div class="links"><a href="#">ArtStation ↗</a></div>
+            </article>
+            <article class="card rv">
+              <div class="thumb">[ GAMEPLAY GIF ]</div>
+              <span class="mono"><b>03</b> · Game</span>
+              <h3>My best game prototype</h3>
+              <p>
+                Core mechanic, engine or language, and what you learned shipping
+                it.
+              </p>
+              <div class="tags">
+                <span>Gameplay</span><span>Prototype</span>
+              </div>
+              <div class="links">
+                <a href="#">Play ↗</a><a href="#">Code ↗</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="wrap">
+          <span class="mono rv"><b>04</b> / Education</span>
+          <h2 class="rv">Mission <em>path</em></h2>
+          <div class="path" id="path">
+            <i class="rover" id="rover" aria-hidden="true">🤖</i>
+            <article class="wp card rv" data-start="2023-02" data-end="2027-02">
+              <span class="mono">WAYPOINT 01 · <b class="st"></b></span>
+              <h3>B.Sc. Physics</h3>
+              <p>National Open University of Nigeria</p>
+              <div class="tele">
+                <span>WINDOW<b>2023 – 2027</b></span
+                ><span>LEVEL<b>300</b></span>
+              </div>
+              <div class="cells"></div>
+            </article>
+            <article class="wp card rv" data-start="2025-11" data-end="2030-11">
+              <span class="mono">WAYPOINT 02 · <b class="st"></b></span>
+              <h3>B.Eng. Mechanical Engineering</h3>
+              <p>University of Uyo</p>
+              <div class="tele">
+                <span>WINDOW<b>2025 – 2030</b></span
+                ><span>LEVEL<b>200</b></span>
+              </div>
+              <div class="cells"></div>
+            </article>
+            <article class="wp card rv">
+              <span class="mono">WAYPOINT 03 · <b>IN PROGRESS</b></span>
+              <h3>AEP Program, Robotics</h3>
+              <p>Aurora Robotics</p>
+              <div class="mods">
+                <span>Mobile robotics</span><span>Robotic arms</span
+                ><span>AI for robotics</span><span>Robot programming</span>
+              </div>
+              <p class="mono" style="margin-top: 14px">
+                &gt; learning<span class="cur">_</span>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications">
+        <div class="wrap">
+          <span class="mono rv"><b>05</b> / Certifications</span>
+          <h2 class="rv">Installed <em>modules</em></h2>
+          <div class="rack">
+            <!-- Copy one .chip per new certificate. Replace each "#" with the credential link. -->
+            <article class="chip rv">
+              <span class="mono"><i class="led"></i>MODULE 01 · INSTALLED</span>
+              <h3>Backend Development Foundation</h3>
+              <p>BeTechified · Aug 2026</p>
+              <div class="tags">
+                <span>JavaScript</span><span>Node.js</span
+                ><span>+5 skills</span>
+              </div>
+              <a class="lk" href="#">Verify credential ↗</a>
+            </article>
+            <article class="chip rv">
+              <span class="mono"><i class="led"></i>MODULE 02 · INSTALLED</span>
+              <h3>Responsive Web Design</h3>
+              <p>freeCodeCamp · Mar 2026</p>
+              <div class="tags">
+                <span>HTML5</span><span>Front-End</span><span>+2 skills</span>
+              </div>
+              <p class="mono" style="margin-top: 12px">ID uniek-rwdv9</p>
+              <a class="lk" href="#">Verify credential ↗</a>
+            </article>
+            <article class="chip next rv">
+              <span class="mono"><i class="led"></i>MODULE 03 · LOADING…</span>
+              <h3>Robotics AEP Certificate</h3>
+              <p>Aurora Robotics · in progress</p>
+              <div class="tags">
+                <span>Mobile robotics</span><span>Robotic arms</span
+                ><span>AI</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="wrap about">
+          <div class="photo rv">
+            <img
+              src="images/ekan.png"
+              alt="Portrait of Ekan Anaikot"
+              onerror="this.remove()"
+            />
+          </div>
+          <div>
+            <span class="mono rv"><b>06</b> / About</span>
+            <h2 class="rv">Software brain, <em>engineer's</em> mindset</h2>
+            <p class="rv">
+              <strong>I'm Ekan.</strong> I build at the intersection of
+              software, design and interactive tech: websites, 3D assets and
+              game systems.
+            </p>
+            <p class="rv">
+              I'm studying <strong>Physics</strong> and
+              <strong>Mechanical Engineering</strong> alongside software, which
+              sharpens how I think about systems, math and constraints, and I
+              apply it directly to clean code and technical 3D work.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="wrap">
+          <span class="mono rv"><b>07</b> / Contact</span>
+          <h2 class="rv">Got a project? <em>Let's build it.</em></h2>
+          <p class="mut rv">
+            Freelance, internships, contract work or collaborations. I reply
+            fast.
+          </p>
+          <div class="cta rv">
+            <a class="btn pri" href="mailto:ekananaikot@gmail.com">Email me</a
+            ><button class="btn" id="copy">Copy email</button>
+          </div>
+          <p class="mono rv">Uyo, Akwa Ibom · Nigeria</p>
+          <div class="socials rv">
+            <a href="#">LinkedIn ↗</a><a href="#">GitHub ↗</a
+            ><a href="#">ArtStation ↗</a><a href="#">Fiverr ↗</a
+            ><a href="#">Instagram ↗</a><a href="#">WhatsApp ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span class="mono">© <span id="y"></span> Ekan Anaikot</span>
+    </footer>
+
+    <script src="ekan_portfolio.js"></script>
+  </body>
+</html>
