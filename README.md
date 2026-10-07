@@ -4,7 +4,7 @@ Personal portfolio of **Ekan Anaikot**: web developer, 3D artist and game develo
 based in Uyo, Nigeria. A fast, single-page site with an interactive skill tree,
 a robotics-themed education timeline and a hardware-module certification rack.
 
-**Live site:** [(https://uniek23.github.io/my_portfolio/#contact)]
+**Live site:** [(https://uniek23.github.io/my_portfolio/#)]
 
 ![Portfolio preview](assets/images/portfolio_preview.png)
 
@@ -31,28 +31,8 @@ HTML, CSS and vanilla JavaScript. Fonts: Space Grotesk and JetBrains Mono (Googl
 portfolio/
 ├── index.html      # markup, styles and scripts in one file
 └── images/
-    └── ekan.png    # portrait used in the About section (optional)
+    └── ekan.png    # portrait used in the About section
 ```
-
-## Run locally
-
-Open `index.html` in a browser, or serve the folder with any static server.
-
-## Customise
-
-- **Theme:** change `--ac` (the accent colour) at the top of the CSS.
-- **Skills:** edit the `T` array at the bottom of the script. Each skill has a level
-  from 0 to 5 and a state: `on` (unlocked), `learn` (in training) or `lock` (roadmap).
-- **Education:** set `data-start` and `data-end` (YYYY-MM) on each waypoint and the
-  progress cells update themselves.
-- **Certifications:** copy a `.chip` block and add the credential link.
-- **Projects:** replace the placeholder cards in the Selected work section.
-- **Contact and social links:** update the email and the `#` links.
-
-## Deploy
-
-- **Netlify:** drag the folder onto Netlify Drop, or connect the repo (no build command).
-- **GitHub Pages:** Settings → Pages → deploy from the `main` branch, `/ (root)`.
 
 ## Contact
 
@@ -63,4 +43,4 @@ Open `index.html` in a browser, or serve the folder with any static server.
 
 ## License
 
-© [year] Ekan Anaikot. All rights reserved.
+© [2026] Ekan Anaikot. All rights reserved.
