@@ -1,5 +1,6 @@
 document.documentElement.classList.add("js");
 document.getElementById("y").textContent = new Date().getFullYear();
+
 // scroll reveal
 const io = new IntersectionObserver(
   (e) =>
@@ -11,6 +12,7 @@ const io = new IntersectionObserver(
     }),
   { threshold: 0.12 },
 );
+
 document.querySelectorAll(".rv").forEach((el) => io.observe(el));
 // copy email
 const cb = document.getElementById("copy");
@@ -20,6 +22,7 @@ cb.onclick = () => {
     setTimeout(() => (cb.textContent = "Copy email"), 1800);
   });
 };
+
 // 3D wireframe
 const c = document.getElementById("cube"),
   x = c.getContext("2d");
@@ -43,6 +46,7 @@ const V = [],
     [3, 7],
   ].forEach(([a, b]) => E.push([a + k * 8, b + k * 8, k]));
 });
+
 for (let i = 0; i < 8; i++) E.push([i, i + 8, 2]);
 let mx = 0,
   my = 0,
@@ -51,6 +55,7 @@ addEventListener("pointermove", (e) => {
   mx = e.clientX / innerWidth - 0.5;
   my = e.clientY / innerHeight - 0.5;
 });
+
 const still = matchMedia("(prefers-reduced-motion:reduce)").matches;
 function draw() {
   const d = devicePixelRatio || 1,
@@ -157,6 +162,7 @@ const T = [
     ],
   ],
 ];
+
 const LV = ["Locked", "Novice", "Apprentice", "Skilled", "Advanced", "Master"],
   tree = document.getElementById("tree"),
   qb = document.getElementById("quest");
@@ -186,6 +192,7 @@ tree.addEventListener("click", (e) => {
 show(tree.querySelector(".node"));
 document.getElementById("xp").textContent =
   `${un}/${tt} skills unlocked · more loading…`;
+
 // education: mission progress cells + rover
 document.querySelectorAll(".wp[data-start]").forEach((w) => {
   const a = new Date(w.dataset.start),
