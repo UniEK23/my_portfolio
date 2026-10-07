@@ -384,11 +384,18 @@ canvas {
 .socials a:hover {
   color: var(--ac);
 }
+
+/* FOOTER */
 footer {
   border-top: 1px solid var(--line);
   padding: 26px 0;
   text-align: center;
 }
+
+#y {
+  color: var(--ac);
+}
+
 /* skill tree */
 .tree {
   display: grid;
@@ -739,6 +746,7 @@ footer {
   .cta .btn {
     flex: 1 1 140px;
     justify-content: center;
+    padding: 10px 0;
   }
   .status {
     font-size: 0.68rem;
