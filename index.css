@@ -748,6 +748,10 @@ nav .nav-cta {
     gap: 18px;
   }
 
+  .work-tabs {
+    justify-content: center;
+  }
+
   .project-open-hint {
     opacity: 0;
     transform: translateY(4px);
@@ -1293,7 +1297,7 @@ footer {
   }
 }
 
-/* Hover treatments only on devices that actually hover */
+/* Hover styling only on devices you can actually hover */
 @media (hover: hover) and (pointer: fine) {
   .btn:hover {
     border-color: var(--accent);
