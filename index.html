@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ekan Anaikot — Web Developer, 3D Artist & Game Developer</title>
+    <meta name="theme-color" content="#0b0c0f" />
     <meta
       name="description"
       content="Ekan Anaikot builds responsive web apps, 3D assets and game prototypes. Based in Uyo, Nigeria. Open to freelance work, internships and collaborations."
@@ -13,7 +13,8 @@
       property="og:description"
       content="Web developer, 3D artist and game developer. Let's build something."
     />
-    <meta name="theme-color" content="#0b0c0f" />
+    <title>Ekan Anaikot — Web Developer, 3D Artist & Game Developer</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,272 +25,376 @@
   </head>
 
   <body>
-    <header>
-      <div class="wrap">
-        <a href="#top" class="logo">Ekan<span>.</span></a>
-        
-        <nav>
+    <header class="site-header">
+      <div class="wrap header-wrap">
+        <a href="#top" class="logo" aria-label="Ekan Anaikot, home"
+          >Ekan<span>.</span></a
+        >
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="primary-nav" aria-label="Primary navigation">
           <a href="#services">Services</a>
           <a href="#skills">Skills</a>
           <a href="#work">Work</a>
-          <a href="#education">Credentials</a>
+          <a href="#education">Education</a>
+          <a href="#certifications">Credentials</a>
           <a href="#about">About</a>
-          <a href="#contact" class="btn pri">Hire me</a>
+          <a href="#contact" class="btn btn-primary nav-cta">Hire me</a>
         </nav>
       </div>
     </header>
 
     <main id="top">
-      <section class="hero">
-        <div class="wrap">
-          <div>
-            <span class="mono status"><i></i> Open to freelance &amp; contracts</span>
-
-            <h1>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="wrap hero-wrap">
+          <div class="hero-copy">
+            <span class="mono status"
+              ><i aria-hidden="true"></i> Open to freelance &amp;
+              contracts</span
+            >
+            <h1 id="hero-title">
               I build things that <em>run</em>, <em>render</em> and
               <em>play</em>.
             </h1>
-            
             <p>
               Ekan Anaikot — web developer, 3D artist and game developer. I turn
               ideas into fast websites, polished 3D assets and playable
               prototypes, with an engineer's attention to detail.
             </p>
-
             <div class="cta">
-              <a href="#work" class="btn pri">See my work →</a>
-
+              <a href="#work" class="btn btn-primary"
+                >See my work <span aria-hidden="true">→</span></a
+              >
               <a href="#contact" class="btn">Let's talk</a>
             </div>
           </div>
 
           <canvas
             id="cube"
-            aria-label="Rotating 3D wireframe"
+            aria-label="Rotating 3D wireframe illustration"
             role="img"
           ></canvas>
         </div>
       </section>
 
-      <section id="services">
+      <section id="services" aria-labelledby="services-title">
         <div class="wrap">
           <span class="mono rv"><b>01</b> / Services</span>
+          <h2 id="services-title" class="rv">Four ways I can <em>help</em></h2>
 
-          <h2 class="rv">Four ways I can <em>help</em></h2>
-
-          <div class="grid">
+          <div class="service-grid">
             <article class="card rv">
               <span class="mono"><b>&lt;/&gt;</b> Web</span>
-
               <h3>Websites &amp; web apps</h3>
-
               <p>
                 Responsive, fast, accessible sites and backends for businesses,
                 creators and startups.
               </p>
-
               <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Node.js</span>
-                <span>Express</span>
+                <span>HTML</span><span>CSS</span><span>JavaScript</span
+                ><span>Node.js</span><span>Express</span>
               </div>
             </article>
 
             <article class="card rv">
               <span class="mono"><b>◆</b> 3D</span>
-
               <h3>3D art &amp; visualization</h3>
-
               <p>
                 Low-poly assets, product renders and environments, optimized for
                 games and the web.
               </p>
-
               <div class="tags">
-                <span>Blender</span>
-                <span>Low-poly</span>
-                <span>Product viz</span>
+                <span>Blender</span><span>Low-poly</span
+                ><span>Product viz</span>
               </div>
             </article>
 
             <article class="card rv">
               <span class="mono"><b>▶</b> Games</span>
-
               <h3>Game prototypes</h3>
-
               <p>
                 Gameplay systems and interactive experiences, built to test
                 ideas quickly.
               </p>
-
               <div class="tags">
-                <span>Gameplay systems</span>
-                <span>Prototyping</span>
+                <span>Gameplay systems</span><span>Prototyping</span>
               </div>
             </article>
 
             <article class="card rv">
               <span class="mono"><b>∑</b> Engineering</span>
-
               <h3>Technical problem-solving</h3>
-
               <p>
                 Physics and mechanical engineering training for math-heavy
                 logic, simulation and CAD-aware work.
               </p>
-
               <div class="tags">
-                <span>Physics</span>
-                <span>SolidWorks</span>
-                <span>Python</span>
+                <span>Physics</span><span>SolidWorks</span><span>Python</span>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="skills">
+      <section id="skills" aria-labelledby="skills-title">
         <div class="wrap">
           <span class="mono rv"><b>02</b> / Skills</span>
-
-          <h2 class="rv">My skill <em>tree</em></h2>
-
-          <p class="mut rv" style="margin: -20px 0 14px; max-width: 60ch">
-            Tap a node. <br> <span class="info">Solid orange is unlocked, pulsing is in training, dim is
-            on the roadmap.</span>
+          <h2 id="skills-title" class="rv">My skill <em>tree</em></h2>
+          <p class="mut skill-intro rv">
+            Select a node to inspect it.<br />
+            <span class="info"
+              >Orange is unlocked, pulsing is in training, and dimmed is on the
+              roadmap.</span
+            >
           </p>
-
-          <p class="mono rv" id="xp" style="margin-bottom: 24px"></p>
-
+          <p class="mono xp rv" id="xp" aria-live="polite"></p>
           <div class="tree" id="tree"></div>
-
           <div class="quest rv" id="quest" aria-live="polite"></div>
         </div>
       </section>
 
-      <section id="work">
+      <section id="work" aria-labelledby="work-title">
         <div class="wrap">
           <span class="mono rv"><b>03</b> / Selected work</span>
+          <h2 id="work-title" class="rv">Projects with <em>proof</em></h2>
 
-          <h2 class="rv">Projects with <em>proof</em></h2>
-
-          <div class="grid work">
-
-            <!-- TODO: replace each block with a real project: screenshot in .thumb, real text, real links -->
-            <article class="card rv">
-              <div class="thumb">[ SCREENSHOT · 1600×1000 ]</div>
-              <span class="mono"><b>01</b> · Web app</span>
-              <h3>My best web project</h3>
-              <p>
-                One line on the problem, one on what was built, one on the
-                result.
-              </p>
-              <div class="tags">
-                <span>JavaScript</span><span>Node.js</span>
-              </div>
-              <div class="links">
-                <a href="#">Live demo ↗</a><a href="#">Code ↗</a>
-              </div>
-            </article>
-            <article class="card rv">
-              <div class="thumb">[ BLENDER RENDER ]</div>
-
-              <span class="mono"><b>02</b> · 3D</span>
-
-              <h3>My best 3D piece</h3>
-
-              <p>
-                The story: what it is, tools used, polygon count or render
-                time.
-              </p>
-              <div class="tags">
-                <span>Blender</span>
-                <span>Low-poly</span>
-              </div>
-
-              <div class="links"><a href="#">ArtStation ↗</a></div>
-            </article>
-
-            <article class="card rv">
-              <div class="thumb">[ GAMEPLAY GIF ]</div>
-
-              <span class="mono"><b>03</b> · Game</span>
-
-              <h3>My best game prototype</h3>
-
-              <p>
-                Core mechanic, engine or language, and what was learned shipping
-                it.
-              </p>
-
-              <div class="tags">
-                <span>Gameplay</span><span>Prototype</span>
-              </div>
-
-              <div class="links">
-                <a href="#">Play ↗</a><a href="#">Code ↗</a>
-              </div>
-            </article>
+          <div
+            class="work-tabs rv"
+            role="tablist"
+            aria-label="Project categories"
+          >
+            <button
+              class="work-button is-active"
+              id="tab-web"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="web-dev"
+              tabindex="0"
+              data-target="web-dev"
+            >
+              Web dev
+            </button>
+            <button
+              class="work-button"
+              id="tab-3d"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="work-3d"
+              tabindex="-1"
+              data-target="work-3d"
+            >
+              3D work
+            </button>
+            <button
+              class="work-button"
+              id="tab-game"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="game-dev"
+              tabindex="-1"
+              data-target="game-dev"
+            >
+              Game dev
+            </button>
           </div>
+
+          <div class="work-panels">
+            <div
+              class="work-content"
+              data-content
+              id="web-dev"
+              role="tabpanel"
+              aria-labelledby="tab-web"
+              tabindex="0"
+            >
+              <div class="work-grid">
+                <button
+                  class="project-tile rv"
+                  type="button"
+                  data-project-id="halcyon-court"
+                  aria-haspopup="dialog"
+                  aria-controls="project-dialog"
+                >
+                  <span class="project-image">
+                    <img
+                      src="assets/images/02-night.png"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="project-open-hint"
+                      >View project <span aria-hidden="true">↗</span></span
+                    >
+                  </span>
+                  <span class="project-caption">
+                    <span class="mono">WEB APP · 01</span>
+                    <span class="project-title">Halcyon Court</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="work-content"
+              data-content
+              id="work-3d"
+              role="tabpanel"
+              aria-labelledby="tab-3d"
+              tabindex="0"
+              hidden
+            >
+              <div class="work-grid">
+                <button
+                  class="project-tile rv"
+                  type="button"
+                  data-project-id="featured-3d"
+                  aria-haspopup="dialog"
+                  aria-controls="project-dialog"
+                >
+                  <span class="project-image">
+                    <img
+                      src="assets/images/3d-artwork.png"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="project-open-hint"
+                      >View project <span aria-hidden="true">↗</span></span
+                    >
+                  </span>
+                  <span class="project-caption">
+                    <span class="mono">3D ART · 01</span>
+                    <span class="project-title">Featured 3D piece</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="work-content"
+              data-content
+              id="game-dev"
+              role="tabpanel"
+              aria-labelledby="tab-game"
+              tabindex="0"
+              hidden
+            >
+              <div class="work-grid">
+                <button
+                  class="project-tile rv"
+                  type="button"
+                  data-project-id="featured-game"
+                  aria-haspopup="dialog"
+                  aria-controls="project-dialog"
+                >
+                  <span class="project-image">
+                    <img
+                      src="assets/images/gameplay-feature.png"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="project-open-hint"
+                      >View project <span aria-hidden="true">↗</span></span
+                    >
+                  </span>
+                  <span class="project-caption">
+                    <span class="mono">GAME PROTOTYPE · 01</span>
+                    <span class="project-title">Featured game prototype</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p class="mono project-note">
+            Select a thumbnail to open the project details.
+          </p>
         </div>
       </section>
 
-      <section id="education">
+      <dialog
+        class="project-dialog"
+        id="project-dialog"
+        aria-labelledby="dialog-title"
+      >
+        <div class="project-dialog-panel">
+          <button
+            class="dialog-close"
+            id="dialog-close"
+            type="button"
+            aria-label="Close project details"
+          >
+            &times;
+          </button>
+          <div class="dialog-image-wrap">
+            <img id="dialog-image" src="" alt="" />
+          </div>
+          <div class="dialog-content">
+            <span class="mono" id="dialog-category"></span>
+            <h2 id="dialog-title"></h2>
+            <p id="dialog-description"></p>
+            <div
+              class="tags"
+              id="dialog-tags"
+              aria-label="Project technologies"
+            ></div>
+            <div class="links" id="dialog-links"></div>
+          </div>
+        </div>
+      </dialog>
+
+      <section id="education" aria-labelledby="education-title">
         <div class="wrap">
           <span class="mono rv"><b>04</b> / Education</span>
-
-          <h2 class="rv">Mission <em>path</em></h2>
+          <h2 id="education-title" class="rv">Mission <em>path</em></h2>
 
           <div class="path" id="path">
             <i class="rover" id="rover" aria-hidden="true">🤖</i>
 
             <article class="wp card rv" data-start="2023-02" data-end="2027-02">
               <span class="mono">WAYPOINT 01 · <b class="st"></b></span>
-
               <h3>B.Sc. Physics</h3>
-
               <p>National Open University of Nigeria</p>
-
               <div class="tele">
                 <span>WINDOW<b>2023 – 2027</b></span
                 ><span>LEVEL<b>300</b></span>
               </div>
-
-              <div class="cells"></div>
+              <div class="cells" aria-label="Degree progress"></div>
             </article>
 
             <article class="wp card rv" data-start="2025-11" data-end="2030-11">
               <span class="mono">WAYPOINT 02 · <b class="st"></b></span>
-              
               <h3>B.Eng. Mechanical Engineering</h3>
-
               <p>University of Uyo</p>
-
               <div class="tele">
                 <span>WINDOW<b>2025 – 2030</b></span
                 ><span>LEVEL<b>200</b></span>
               </div>
-
-              <div class="cells"></div>
+              <div class="cells" aria-label="Degree progress"></div>
             </article>
 
             <article class="wp card rv">
               <span class="mono">WAYPOINT 03 · <b>IN PROGRESS</b></span>
-
               <h3>AEP Program, Robotics</h3>
-
               <p>Aurora Robotics</p>
-
               <div class="mods">
-                <span>Mobile robotics</span>
-                <span>Robotic arms</span>
-                <span>AI for robotics</span>
-                <span>Robot programming</span>
+                <span>Mobile robotics</span><span>Robotic arms</span
+                ><span>AI for robotics</span><span>Robot programming</span>
               </div>
-
-              <p class="mono" style="margin-top: 14px">
+              <p class="mono terminal-line">
                 &gt; learning<span class="cur">_</span>
               </p>
             </article>
@@ -297,133 +402,170 @@
         </div>
       </section>
 
-      <section id="certifications">
+      <section id="certifications" aria-labelledby="certifications-title">
         <div class="wrap">
           <span class="mono rv"><b>05</b> / Certifications</span>
-
-          <h2 class="rv">Installed <em>modules</em></h2>
+          <h2 id="certifications-title" class="rv">
+            Installed <em>modules</em>
+          </h2>
 
           <div class="rack">
-
-            <!-- One .chip per new certificate. -->
             <article class="chip rv">
-              <span class="mono"><i class="led"></i>MODULE 01 · INSTALLED</span>
-
+              <span class="mono"
+                ><i class="led" aria-hidden="true"></i>MODULE 01 ·
+                INSTALLED</span
+              >
               <h3>Backend Development Foundation</h3>
-
               <p>BeTechified · Aug 2026</p>
-
               <div class="tags">
                 <span>JavaScript</span><span>Node.js</span
                 ><span>+5 skills</span>
               </div>
-
-              <a class="lk" href="https://www.linkedin.com/in/ekan-anaikot-8a0623337">Verify credential ↗</a>
+              <a
+                class="lk"
+                href="https://www.linkedin.com/in/ekan-anaikot-8a0623337"
+                target="_blank"
+                rel="noreferrer"
+                >Verify credential ↗</a
+              >
             </article>
 
             <article class="chip rv">
-              <span class="mono"><i class="led"></i>MODULE 02 · INSTALLED</span>
-
+              <span class="mono"
+                ><i class="led" aria-hidden="true"></i>MODULE 02 ·
+                INSTALLED</span
+              >
               <h3>Responsive Web Design</h3>
-
               <p>freeCodeCamp · Mar 2026</p>
-
               <div class="tags">
-                <span>HTML5</span><span>Front-End</span><span>+2 skills</span>
+                <span>HTML5</span><span>Front-end</span><span>+2 skills</span>
               </div>
-
-              <p class="mono" style="margin-top: 12px">ID uniek-rwdv9</p>
-
-              <a class="lk" href="https://www.freecodecamp.org/certification/uniek/responsive-web-design-v9">Verify credential ↗</a>
+              <p class="mono credential-id">ID uniek-rwdv9</p>
+              <a
+                class="lk"
+                href="https://www.freecodecamp.org/certification/uniek/responsive-web-design-v9"
+                target="_blank"
+                rel="noreferrer"
+                >Verify credential ↗</a
+              >
             </article>
 
             <article class="chip next rv">
-              <span class="mono"><i class="led"></i>MODULE 03 · LOADING…</span>
-
+              <span class="mono"
+                ><i class="led" aria-hidden="true"></i>MODULE 03 ·
+                LOADING…</span
+              >
               <h3>Robotics AEP Certificate</h3>
-
-              <p>Aurora Robotics · in progress</p>
-
+              <p>Aurora Robotics · In progress</p>
               <div class="tags">
-                <span>Mobile robotics</span>
-                <span>Robotic arms</span>
-                <span>AI</span>
+                <span>Mobile robotics</span><span>Robotic arms</span
+                ><span>AI</span>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="about">
+      <section id="about" aria-labelledby="about-title">
         <div class="wrap about">
           <div class="photo rv">
             <img
               src="assets/images/ekan.png"
               alt="Portrait of Ekan Anaikot"
-              onerror="this.remove()"
+              loading="lazy"
+              decoding="async"
             />
           </div>
-
-          <div>
+          <div class="about-copy">
             <span class="mono rv"><b>06</b> / About</span>
-
-            <h2 class="rv">Software brain, <em>engineer's</em> mindset</h2>
-
+            <h2 id="about-title" class="rv">
+              Software brain, <em>engineer's</em> mindset
+            </h2>
             <p class="rv">
               <strong>I'm Ekan.</strong> I build at the intersection of
               software, design and interactive tech: websites, 3D assets and
               game systems.
             </p>
-
             <p class="rv">
               I'm studying <strong>Physics</strong> and
-              <strong>Mechanical Engineering</strong> alongside software, which
-              sharpens how I think about systems, math and constraints, and I
-              apply it directly to clean code and technical 3D work.
+              <strong>Mechanical Engineering</strong> alongside software. That
+              mix sharpens how I think about systems, mathematics and
+              constraints, and I apply it to clean code and technical 3D work.
             </p>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="contact">
+      <section id="contact" class="contact" aria-labelledby="contact-title">
         <div class="wrap">
           <span class="mono rv"><b>07</b> / Contact</span>
-
-          <h2 class="rv">Got a project? <em>Let's build it.</em></h2>
-
+          <h2 id="contact-title" class="rv">
+            Got a project? <em>Let's build it.</em>
+          </h2>
           <p class="mut rv">
             Freelance, internships, contract work or collaborations. I reply
             fast.
           </p>
-
           <div class="cta rv">
-            <a class="btn pri" href="mailto:ekananaikot@gmail.com">Email me</a
-            ><button class="btn" id="copy">Copy email</button>
+            <a class="btn btn-primary" href="mailto:ekananaikot@gmail.com"
+              >Email me</a
+            >
+            <button class="btn" id="copy-email" type="button">
+              Copy email
+            </button>
           </div>
-
           <p class="mono rv">Uyo, Akwa Ibom · Nigeria</p>
-
-          <div class="socials rv">
-            <a href="https://www.linkedin.com/in/ekan-anaikot-8a0623337">LinkedIn ↗</a>
-
-            <a href="https://github.com/UniEK23">GitHub ↗</a>
-
-            <a href="https://www.artstation.com/ekanastra">ArtStation ↗</a>
-
-            <a href="https://www.fiverr.com/s/GPPPbgq">Fiverr ↗</a>
-
-            <a href="https://www.instagram.com/_therealuniek_">Instagram ↗</a>
-
-            <a href="https://wa.me/2347032524431">WhatsApp ↗</a>
+          <div class="socials rv" aria-label="Social links">
+            <a
+              href="https://www.linkedin.com/in/ekan-anaikot-8a0623337"
+              target="_blank"
+              rel="noreferrer"
+              >LinkedIn ↗</a
+            >
+            <a
+              href="https://github.com/UniEK23"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub ↗</a
+            >
+            <a
+              href="https://www.artstation.com/ekanastra"
+              target="_blank"
+              rel="noreferrer"
+              >ArtStation ↗</a
+            >
+            <a
+              href="https://www.fiverr.com/s/GPPPbgq"
+              target="_blank"
+              rel="noreferrer"
+              >Fiverr ↗</a
+            >
+            <a
+              href="https://www.instagram.com/_therealuniek_"
+              target="_blank"
+              rel="noreferrer"
+              >Instagram ↗</a
+            >
+            <a
+              href="https://wa.me/2347032524431"
+              target="_blank"
+              rel="noreferrer"
+              >WhatsApp ↗</a
+            >
           </div>
+          <p
+            class="copy-status mono"
+            id="copy-status"
+            role="status"
+            aria-live="polite"
+          ></p>
         </div>
       </section>
     </main>
 
     <footer>
-      <span class="mono">&copy; <span id="y"></span> Ekan Anaikot</span>
+      <span class="mono">&copy; <span id="year"></span> Ekan Anaikot</span>
     </footer>
-
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
   </body>
 </html>
