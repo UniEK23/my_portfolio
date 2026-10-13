@@ -28,8 +28,10 @@ HTML, CSS and vanilla JavaScript. Fonts: Space Grotesk and JetBrains Mono (Googl
 ## Project structure
 
 ```text
-portfolio/
-├── index.html      # markup, styles and scripts in one file
+portfolio/        # markup, styles and scripts in one file
+├── index.html
+├── index.css
+├── index.js
 └── images/
     └── ekan.png    # portrait used in the About section
 ```
