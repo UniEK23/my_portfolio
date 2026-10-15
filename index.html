@@ -230,7 +230,7 @@
                 >
                   <span class="project-image">
                     <img
-                      src="assets/images/02-night.png"
+                      src="assets/images/halcyon-court.png"
                       alt=""
                       loading="lazy"
                       decoding="async"
@@ -242,6 +242,54 @@
                   <span class="project-caption">
                     <span class="mono">WEB APP · 01</span>
                     <span class="project-title">Halcyon Court</span>
+                  </span>
+                </button>
+
+                <button
+                  class="project-tile rv"
+                  type="button"
+                  data-project-id="watch-my-wards"
+                  aria-haspopup="dialog"
+                  aria-controls="project-dialog"
+                >
+                  <span class="project-image">
+                    <img
+                      src="assets/images/watch-my-wards.png"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="project-open-hint"
+                      >View project <span aria-hidden="true">↗</span></span
+                    >
+                  </span>
+                  <span class="project-caption">
+                    <span class="mono">WEB APP · 02</span>
+                    <span class="project-title">Watch My Wards</span>
+                  </span>
+                </button>
+
+                <button
+                  class="project-tile rv"
+                  type="button"
+                  data-project-id="heven-survey"
+                  aria-haspopup="dialog"
+                  aria-controls="project-dialog"
+                >
+                  <span class="project-image">
+                    <img
+                      src="assets/images/heven-survey.png"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="project-open-hint"
+                      >View project <span aria-hidden="true">↗</span></span
+                    >
+                  </span>
+                  <span class="project-caption">
+                    <span class="mono">LANDING PAGE · 03</span>
+                    <span class="project-title">HEVEN Survey Landing Page</span>
                   </span>
                 </button>
               </div>
@@ -319,6 +367,7 @@
               </div>
             </div>
           </div>
+          
           <p class="mono project-note">
             Select a thumbnail to open the project details.
           </p>
@@ -339,18 +388,51 @@
           >
             &times;
           </button>
+          
           <div class="dialog-image-wrap">
             <img id="dialog-image" src="" alt="" />
           </div>
+
           <div class="dialog-content">
             <span class="mono" id="dialog-category"></span>
+
             <h2 id="dialog-title"></h2>
+
             <p id="dialog-description"></p>
+
+            <dl class="dialog-meta" id="dialog-meta">
+              <div>
+                <dt>Duration</dt>
+                <dd id="dialog-duration"></dd>
+              </div>
+              
+              <div>
+                <dt>Status</dt>
+                <dd id="dialog-status"></dd>
+              </div>
+            </dl>
+
+            <section class="dialog-block" id="dialog-problem-block">
+              <h3>Problem</h3>
+              <p id="dialog-problem"></p>
+            </section>
+
+            <section class="dialog-block" id="dialog-solution-block">
+              <h3>Solution</h3>
+              <p id="dialog-solution"></p>
+            </section>
+
+            <section class="dialog-block" id="dialog-role-block">
+              <h3>My role</h3>
+              <p id="dialog-role"></p>
+            </section>
+
             <div
               class="tags"
               id="dialog-tags"
               aria-label="Project technologies"
             ></div>
+
             <div class="links" id="dialog-links"></div>
           </div>
         </div>
@@ -391,8 +473,11 @@
               <h3>AEP Program, Robotics</h3>
               <p>Aurora Robotics</p>
               <div class="mods">
-                <span>Mobile robotics</span><span>Robotic arms</span
-                ><span>AI for robotics</span><span>Robot programming</span>
+                <span>Mobile robotics</span>
+                <span>Robotic arms</span>
+                <span>AI for robotics</span>
+                <span>Robot programming</span>
+                <span>Computer Vision</span>
               </div>
               <p class="mono terminal-line">
                 &gt; learning<span class="cur">_</span>
@@ -458,8 +543,11 @@
               <h3>Robotics AEP Certificate</h3>
               <p>Aurora Robotics · In progress</p>
               <div class="tags">
-                <span>Mobile robotics</span><span>Robotic arms</span
-                ><span>AI</span>
+                <span>Mobile robotics</span>
+                <span>Robotic arms</span>
+                <span>AI</span>
+                <span>Computer Vision</span>
+                <span>Programming for Robotics</span>
               </div>
             </article>
           </div>
